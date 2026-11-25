@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember &amp; Ladle — Hearth Rush</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #241a12;
+    overflow: hidden;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  }
+  #game {
+    display: block;
+    background: #2a1d13;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+  }
+  #selftest {
+    position: fixed;
+    left: 8px;
+    bottom: 8px;
+    color: #fff6e3;
+    font-size: 12px;
+    white-space: pre-wrap;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720"></canvas>
+<div id="selftest"></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
